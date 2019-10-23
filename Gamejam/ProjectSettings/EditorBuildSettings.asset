@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Alex/MainMenu.unity
+    guid: 86fe348559b1d3a49bc8b69359e7c669
+  - enabled: 1
+    path: Assets/Alex/Play.unity
+    guid: 9ad05071e9be3474a9145cf459c02d9d
   m_configObjects: {}
