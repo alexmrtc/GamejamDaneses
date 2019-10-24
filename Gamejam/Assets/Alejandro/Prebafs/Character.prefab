@@ -47,9 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterCollider: {fileID: 2740450907908099662}
-  souls: []
   canvasRetry: {fileID: 0}
-  spawnPoint: {fileID: 0}
 --- !u!50 &2740450907264493529
 Rigidbody2D:
   serializedVersion: 4
@@ -82,7 +80,7 @@ GameObject:
   - component: {fileID: 2740450907908099663}
   - component: {fileID: 2740450907908099662}
   m_Layer: 0
-  m_Name: Collider
+  m_Name: characterCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -139,7 +137,7 @@ GameObject:
   - component: {fileID: 2740450908532843996}
   - component: {fileID: 2740450908532843997}
   m_Layer: 0
-  m_Name: Sprite
+  m_Name: characterSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
