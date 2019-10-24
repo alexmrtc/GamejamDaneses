@@ -11,6 +11,14 @@ public class MainMenu : MonoBehaviour
     public GameObject creditsMenu;
     public GameObject settingsMenu;
 
+    public Button playButton;
+    public Button settingsButton;
+    public Button quitButton;
+
+    public Sprite play;
+    public Sprite setting;
+    public Sprite quit;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -61,6 +69,8 @@ public class MainMenu : MonoBehaviour
 
     public void ShowSettingsHideMenu()
     {
+        playButton.image.sprite = setting;
+
         mainMenu.SetActive(false);
         settingsMenu.SetActive(true);
     }
@@ -69,5 +79,19 @@ public class MainMenu : MonoBehaviour
     {
         settingsMenu.SetActive(false);
         mainMenu.SetActive(true);
+    }
+
+    public void OnHighLightPlayBtn()
+    {
+        playButton.image.sprite = play;
+    }
+
+    public void OnHighLightSettingBtn()
+    {
+        playButton.image.sprite = setting;
+    }
+    public void OnHighLightQuitBtn()
+    {
+        playButton.image.sprite = quit;
     }
 }
