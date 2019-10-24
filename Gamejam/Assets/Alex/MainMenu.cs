@@ -34,7 +34,7 @@ public class MainMenu : MonoBehaviour
 
     public void Play()
     {
-        SceneManager.LoadScene("Play");
+        SceneManager.LoadScene("Colliders");
         FindObjectOfType<AudioManager>().Play("ButtonClick");
     }
 
