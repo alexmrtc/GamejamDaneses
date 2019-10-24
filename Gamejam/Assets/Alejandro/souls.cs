@@ -2,19 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class souls : MonoBehaviour
+public class Souls : MonoBehaviour
 {
-    collision characterCollider;
+    TriggerActions characterCollider;
 
     private void Start()
     {
-        characterCollider = FindObjectOfType<collision>().GetComponent<collision>();
+        characterCollider = FindObjectOfType<TriggerActions>().GetComponent<TriggerActions>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(collision.name);
-
         if (collision.name == "characterCollider")
         {
             this.gameObject.SetActive(false);

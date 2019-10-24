@@ -2,31 +2,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class collision : MonoBehaviour
+public class TriggerActions : MonoBehaviour
 {
     #region variables
     public Collider2D characterCollider;
     public GameObject canvasRetry;
+    public DragNDrop dragNDrop;
 
     private int soulsEaten;
     #endregion
 
     private void Start() {
-        // Starts the player
+        // Starts the player.
         this.enabled = true;
+
+        // Sets enabled the click & Drag script.
         
         // Restarts the count souls.
         soulsEaten = 0;
     }
 
-    private void Update()
-    {
-        Debug.Log("SOULS: " + soulsEaten);
-    }
-
     public void resetCharacter()
     {
-        // Starts the player
+        // Starts the player.
         this.enabled = true;
 
         // Restarts the count souls.
@@ -35,7 +33,6 @@ public class collision : MonoBehaviour
 
     private void spawnRetryCanvas()
     {
-
         canvasRetry.SetActive(true);
     }
 
@@ -62,9 +59,21 @@ public class collision : MonoBehaviour
 
             spawnRetryCanvas();
         }
-        else if (trigger.name == "TriggerClickableZone")
-        {
-            // @TODO: click and drag things
-        }
+        //else if (trigger.name == "TriggerClickableZone")
+        //{
+        //    // @TODO: click and drag things
+        //    Debug.Log("CLICK AND DRAG ACTIVE");
+        //    dragNDrop.enabled = true;
+        //}
     }
+
+    //public void OnTriggerExit2D(Collider2D trigger)
+    //{
+    //    if (trigger.name == "TriggerClickableZone")
+    //    {
+    //        // @TODO: click and drag things
+    //        Debug.Log("CLICK AND DRAG NO active");
+    //        dragNDrop.enabled = false;
+    //    }
+    //}
 }

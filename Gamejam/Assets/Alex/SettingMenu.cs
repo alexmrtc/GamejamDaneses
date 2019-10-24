@@ -11,7 +11,6 @@ public class SettingMenu : MonoBehaviour
     public Slider volumeEffects;
     public AudioMixer audioMixer;
 
-
     public void SetVolumeMaster(float volume)
     {
         audioMixer.SetFloat("volumeMaster", volume);

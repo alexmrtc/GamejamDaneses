@@ -8,7 +8,7 @@ public class CanvasControl : MonoBehaviour
 {
     public GameObject canvasRetry;
     public GameObject canvasPause;
-    public collision character;
+    public TriggerActions character;
 
     public void resumeButton()
     {
