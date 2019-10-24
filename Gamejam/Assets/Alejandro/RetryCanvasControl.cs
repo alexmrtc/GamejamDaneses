@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class RetryCanvasControl : MonoBehaviour
@@ -24,8 +25,9 @@ public class RetryCanvasControl : MonoBehaviour
     public void noButton()
     {
         canvasRetry.SetActive(false);
-        
+
         // Load main scene (title scene)
+        SceneManager.LoadScene("Alex/MainMenu");
 
     }
 }
