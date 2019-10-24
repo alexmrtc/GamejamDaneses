@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class MainMenu : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class MainMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        FindObjectOfType<AudioManager>().Play("Theme");
     }
 
     // Update is called once per frame
@@ -25,6 +26,12 @@ public class MainMenu : MonoBehaviour
     public void Play()
     {
         SceneManager.LoadScene("Play");
+        FindObjectOfType<AudioManager>().Play("ButtonClick");
+    }
+
+    public void ButtonClick()
+    {
+        FindObjectOfType<AudioManager>().Play("ButtonClick");
     }
 
     public void BackToMainMenu()
