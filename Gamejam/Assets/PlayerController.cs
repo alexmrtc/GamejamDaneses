@@ -38,7 +38,7 @@ public class PlayerController : PhysicsObject
         if (move.x > 0.01f && spriteRenderer.flipX)
         {
             Flip();
-        } else if(move.x < -0.01f && !spriteRenderer.flipX)
+        } else if(move.x < -0.01f && !  spriteRenderer.flipX)
         {
             Flip();
         }

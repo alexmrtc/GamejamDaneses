@@ -12,10 +12,10 @@ public class SoulCount : MonoBehaviour
     // Debug add and remove souls.
     private void Update()
     {
-        if (Input.GetKeyDown("f"))
-            AddSoul();
-        if (Input.GetKeyDown("g"))
-            RemoveSoul();
+        //if (Input.GetKeyDown("f"))
+        //    AddSoul();
+        //if (Input.GetKeyDown("g"))
+        //    RemoveSoul();
     }
     
 
