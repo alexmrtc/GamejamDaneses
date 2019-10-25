@@ -5,18 +5,24 @@ using UnityEngine;
 public class Souls : MonoBehaviour
 {
     TriggerActions characterCollider;
+    public GameObject soulCount;
 
     private void Start()
     {
         characterCollider = FindObjectOfType<TriggerActions>().GetComponent<TriggerActions>();
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.name == "characterCollider")
+        //Debug.Log(collision.name);
+
+        if (collision.name == "character")
         {
             this.gameObject.SetActive(false);
             characterCollider.addOneSoul();
+
+            soulCount.GetComponent<SoulCount>().AddSoul();
         }
     }
 }
